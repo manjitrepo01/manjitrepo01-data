@@ -1,0 +1,11 @@
+{
+  "data_version": 1,
+  "settings_version": 1,
+  "keys_version": 1,
+  "endpoints_version": 1,
+  "blocked_version": 1,
+  "referrals_version": 1,
+  "withdrawals_version": 1,
+  "min_app_version": 1,
+  "force_update": false
+}
