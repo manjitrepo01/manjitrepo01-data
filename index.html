@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0A0F0A;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 60px 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #00FF66;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+        p {
+            color: #8A8F8A;
+            margin: 20px 0 40px;
+        }
+        a {
+            display: inline-block;
+            background: #00FF66;
+            color: #0A0F0A;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MANJIT BOMBER X</h1>
+    <p>Premium Tool</p>
+    <a id="downloadBtn" href="app-release.apk">DOWNLOAD</a>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const ref = params.get('ref') || '';
+        const apkUrl = 'app-release.apk' + (ref ? '?ref=' + ref : '');
+        document.getElementById('downloadBtn').href = apkUrl;
+    </script>
+</body>
+</html>
