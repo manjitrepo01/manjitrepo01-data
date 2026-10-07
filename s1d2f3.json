@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "subscription_price": 100,
+  "referral_amount": 50,
+  "withdrawal_minimum": 500,
+  "qr_image_url": "https://raw.githubusercontent.com/manjitrepo01/manjitrepo01-data/main/qr.png",
+  "admin_whatsapp": "+919508225312",
+  "data_version": 1
+}
