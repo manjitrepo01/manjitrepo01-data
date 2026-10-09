@@ -5,9 +5,12 @@
       "status": "unused"
     },
     {
+      "bound_at": "2026-10-09T21:37:52Z",
+      "device_model": "Vivo V2240",
+      "fingerprint": "0f9f6ace976a24508497de44d641d7fea1921cb0992d2d41eed1a2bf26349bdf",
       "key_hash": "16ef69e17b94e9aa4beb3fb8a358ff6bf2a9198ed97546a75752a6fb8869701b",
-      "status": "unused"
+      "status": "active"
     }
   ],
-  "version": 3
+  "version": 4
 }
