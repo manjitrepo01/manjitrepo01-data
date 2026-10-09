@@ -3,7 +3,11 @@
     {
       "key_hash": "9a896c500d83d73d04e081ea95da23c2faa9d8650fcd46749dfcc1d5da9fdbd8",
       "status": "unused"
+    },
+    {
+      "key_hash": "e76fb1d0ca7c3cfd14ecf67e17e58e54888a1041e79a533960c387a378aaf79f",
+      "status": "unused"
     }
   ],
-  "version": 2
+  "version": 3
 }
