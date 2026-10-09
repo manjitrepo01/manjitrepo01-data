@@ -1,4 +1,9 @@
 {
-  "version": 1,
-  "keys": []
+  "keys": [
+    {
+      "key_hash": "5e2e9a27f215c7ad4a9fd56e3cc86e7b075a911b8084c1281e417d9ebaca2546",
+      "status": "unused"
+    }
+  ],
+  "version": 2
 }
