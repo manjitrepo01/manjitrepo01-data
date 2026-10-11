@@ -1,9 +1,12 @@
 {
   "keys": [
     {
+      "bound_at": "2026-10-11T12:07:20Z",
+      "device_model": "Google sdk_gphone16k_x86_64",
+      "fingerprint": "0f766a8da8932dca36f58df080a4ad5f0b74b389733f2449e9a87aeb56c36eaa",
       "key_hash": "b6d7f8c7f1504992d152e0dcd0505c01aa92cd18af3798c180b59405d8b16dfa",
-      "status": "unused"
+      "status": "active"
     }
   ],
-  "version": 8
+  "version": 9
 }
