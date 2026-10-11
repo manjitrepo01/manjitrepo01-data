@@ -1,16 +1,20 @@
 {
   "keys": [
     {
-      "key_hash": "",
+      "key_hash": "9a896c500d83d73d04e081ea95da23c2faa9d8650fcd46749dfcc1d5da9fdbd8",
       "status": "unused"
     },
     {
-      "bound_at": "",
-      "device_model": "",
-      "fingerprint": "",
-      "key_hash": "",
+      "bound_at": "2026-10-09T21:38:37Z",
+      "device_model": "Realme RMX3780",
+      "fingerprint": "6eaaca43dcf0e580426f2ff17810d7ef33b0b6ab025088d3ece33e954c013c56",
+      "key_hash": "16ef69e17b94e9aa4beb3fb8a358ff6bf2a9198ed97546a75752a6fb8869701b",
+      "status": "active"
+    },
+    {
+      "key_hash": "affe6e18521cf812d33ef97fe84ee7a85e5e8107babd5878799966406dd509a6",
       "status": "unused"
     }
   ],
-  "version": 1
+  "version": 5
 }
