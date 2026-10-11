@@ -21,7 +21,11 @@
     {
       "key_hash": "1c643de62956b55d0798e588e39eb24f43cd5933ec8ac016337f5ea19f674f3e",
       "status": "unused"
+    },
+    {
+      "key_hash": "22524e36a0925b497e51043a1e44bfd3013b1f05952d1e1905bf71f2ae798481",
+      "status": "unused"
     }
   ],
-  "version": 7
+  "version": 8
 }
