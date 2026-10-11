@@ -17,7 +17,11 @@
       "fingerprint": "6eaaca43dcf0e580426f2ff17810d7ef33b0b6ab025088d3ece33e954c013c56",
       "key_hash": "affe6e18521cf812d33ef97fe84ee7a85e5e8107babd5878799966406dd509a6",
       "status": "active"
+    },
+    {
+      "key_hash": "1c643de62956b55d0798e588e39eb24f43cd5933ec8ac016337f5ea19f674f3e",
+      "status": "unused"
     }
   ],
-  "version": 6
+  "version": 7
 }
