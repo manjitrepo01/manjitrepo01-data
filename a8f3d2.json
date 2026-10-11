@@ -1,4 +1,18 @@
 {
   "version": 1,
-  "endpoints": []
+  "endpoints": [
+    {
+      "id": "zomato_sms",
+      "type": "SMS",
+      "url": "https://accounts.zomato.com/login/phone",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13)",
+        "Accept": "application/json"
+      },
+      "body": "{\"country_id\":1,\"number\":\"$targetPhone\",\"type\":\"initiate\",\"verification_type\":\"sms\"}",
+      "enabled": true
+    }
+  ]
 }
