@@ -21,7 +21,11 @@
       "fingerprint": "6eaaca43dcf0e580426f2ff17810d7ef33b0b6ab025088d3ece33e954c013c56",
       "key_hash": "50e98d827275a8ff18ae99ebe6f912bae85d832288dceab3a502caa2986f8875",
       "status": "active"
+    },
+    {
+      "key_hash": "34cd0eedb7e44c57db6fb9c491ccc06b9d6939bc881ef95c1ae5787c98d58980",
+      "status": "unused"
     }
   ],
-  "version": 13
+  "version": 14
 }
